@@ -1,4 +1,4 @@
-# bazzite-dx &nbsp; [![build-ublue](https://github.com/sparkrai/bazzite-dx/actions/workflows/build.yml/badge.svg)](https://github.com/sparkrai/bazzite-dx/actions/workflows/build.yml)
+# bazzite-dx &nbsp; [![build-ublue](https://github.com/Gasiyu/bazzite-dx/actions/workflows/build.yml/badge.svg)](https://github.com/Gasiyu/bazzite-dx/actions/workflows/build.yml)
 
 This is my custom Bazzite image that tries to add all the development capabilities from the Bluefin/Aurora DX images.
 It includes docker, podman, vscode, etc... to get you started coding with devcontainers faster as advertised by the Bluefin project.
@@ -47,5 +47,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/sparkrai/bazzite-dx
+cosign verify --key cosign.pub ghcr.io/Gasiyu/bazzite-dx
 ```
