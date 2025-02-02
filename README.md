@@ -7,10 +7,8 @@ It includes docker, podman, vscode, etc... to get you started coding with devcon
 These images as provided as is and are considered in alpha state!
 
 ## Desktop Environment
-As with the other ublue-os images, this image comes with either KDE or GNOME Desktop Environment.
-The imaghes respect Bazzite naming convention:
-- **bazzite-dx** based on **bazzite**, runs KDE with **aurora-dx** layered on top
-- **bazzite-gnome-dx** based on **bazzite-gnome**, runs GNOME with **bluefin-dx** layered on top
+This image comes with GNOME Desktop Environment:
+- **bazzite-dx-gnome-nvidia-open** based on **bazzite-gnome-nvidia-open**, runs GNOME with **bluefin-dx** layered on top
 
 ## Installation
 
@@ -19,11 +17,11 @@ The imaghes respect Bazzite naming convention:
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First choose the flavor of the image you'd like to install (either **bazzite-dx** or **bazzite-gnome-dx**)
+- First choose the flavor of the image you'd like to install (**bazzite-dx-gnome-nvidia-open**)
 
 - Then rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sparkrai/(bazzite-dx or bazzite-gnome-dx):latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/Gasiyu/bazzite-dx-gnome-nvidia-open:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -31,7 +29,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sparkrai/(bazzite-dx or bazzite-gnome-dx):latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/Gasiyu/bazzite-dx-gnome-nvidia-open:latest
   ```
 - Reboot again to complete the installation
   ```
